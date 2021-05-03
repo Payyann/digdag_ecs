@@ -1,0 +1,9 @@
+aws:
+  access_key: digdag
+  secret_key: password
+  region: ap-northeast-1
+s3:
+  endpoint:  http://storage:9000
+  force_path_style: true
+  region: ap-northeast-1
+  bucket: digdag
