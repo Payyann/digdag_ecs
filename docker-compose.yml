@@ -5,7 +5,8 @@ services:
     ports:
       - "65432:65432"
     volumes:
-      - .:/digdag
+      - .:/tmp/digdag
+      - /var/run/docker.sock:/var/run/docker.sock
     command: bash -c "digdag server -c server.properties -P params.yml"
     depends_on:
       - db
